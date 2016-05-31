@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Geo View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GeoViewController" customModule="Geo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yy1-HJ-dZp">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="P8Y-Us-zxS">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndp-5q-fY7">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="EqN-IA-nu9"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="flagButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ju-0B-qvM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy5-k5-9gI">
+                                        <rect key="frame" x="0.0" y="145" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFs-dr-VTH">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="goh-zY-UK3"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="flagButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4X3-VZ-xFo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYW-KZ-Evp">
+                                        <rect key="frame" x="0.0" y="290" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSM-Ik-WCr">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="v8L-zV-eoC"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="flagButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsz-uA-aAu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQa-0U-ROi">
+                                        <rect key="frame" x="0.0" y="435" width="560" height="145"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-Qn-OGc">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="aT4-PV-qFH"/>
+                                                </constraints>
+                                                <state key="normal" title="Hear phrase"/>
+                                                <connections>
+                                                    <action selector="hearPhrase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7tN-CX-Ub4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Yy1-HJ-dZp" secondAttribute="leading" id="1ks-Kk-pjh"/>
+                            <constraint firstItem="Yy1-HJ-dZp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2vR-FW-oV1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yy1-HJ-dZp" secondAttribute="bottom" id="8gd-7F-nB7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yy1-HJ-dZp" secondAttribute="trailing" id="kSu-Qz-emu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flagButton1" destination="Ndp-5q-fY7" id="HUX-Uh-dbn"/>
+                        <outlet property="flagButton2" destination="RFs-dr-VTH" id="eUr-OO-vmJ"/>
+                        <outlet property="flagButton3" destination="uSM-Ik-WCr" id="DBI-Ct-3VK"/>
+                        <outlet property="repeatPhraseButton" destination="ZLa-Qn-OGc" id="tzd-zq-6L2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="440"/>
+        </scene>
+    </scenes>
+</document>
